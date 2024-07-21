@@ -36,7 +36,7 @@ public class JdbcMain {
 				// MENU_NO는 기본키 -> 자동생성해주자
 				String sql1 = "select MAX(menu_no) from "+테이블명;
 				pstmt = con.prepareStatement(sql1);
-//				pstmt.setString(1, 테이블명);
+				//pstmt.setString(1, 테이블명);
 				rs = pstmt.executeQuery();
 				rs.next();
 				
@@ -45,7 +45,7 @@ public class JdbcMain {
 						
 				String sql2 = "insert into "+테이블명+" values(?,?,?,?)";
 				pstmt = con.prepareStatement(sql2);
-//				pstmt.setString(1, 테이블명); 
+				//pstmt.setString(1, 테이블명); 
 				pstmt.setInt(1, 번째);
 				System.out.printf("%d 번째 메뉴입니다.\n", 번째);
 				
