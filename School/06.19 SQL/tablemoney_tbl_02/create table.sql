@@ -1,4 +1,4 @@
-create tablemoney_tbl_02 (
+create table money_tbl_02 (
 	custno number(6) primary key,
 	salenol number(8) primary key,
 	pcost number(8),
